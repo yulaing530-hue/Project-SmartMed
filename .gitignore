@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+meds.db
+*.jpg
+*.jpeg
+*.png
