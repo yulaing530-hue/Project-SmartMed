@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- 頂部標題 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="智慧用藥小幫手"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="48dp" />
+
+    <!-- 狀態一：首頁按鈕群組 -->
+    <LinearLayout
+        android:id="@+id/layout_home_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_scan_prescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="掃描處方箋\n(建立用藥資料)"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp" />
+
+        <Button
+            android:id="@+id/btn_check_pills"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="吃藥前檢查\n(拍下桌上藥丸)"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:elevation="8dp" />
+    </LinearLayout>
+
+    <!-- 狀態二：照片預覽群組 (預設隱藏 visibility="gone") -->
+    <LinearLayout
+        android:id="@+id/layout_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 顯示拍下來的照片 -->
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="24dp"
+            android:background="#E0E0E0"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="確認送出"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_retake"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="重新拍照"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9E9E9E" />
+    </LinearLayout>
+
+</LinearLayout>
