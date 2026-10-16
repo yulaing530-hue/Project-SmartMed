@@ -4,3 +4,5 @@ meds.db
 *.jpg
 *.jpeg
 *.png
+data/*.csv
+data/*.db
