@@ -49,7 +49,7 @@
             android:elevation="8dp" />
     </LinearLayout>
 
-    <!-- 狀態二：照片預覽群組 (預設隱藏 visibility="gone") -->
+    <!-- 狀態二：照片預覽群組 (預設隱藏) -->
     <LinearLayout
         android:id="@+id/layout_preview"
         android:layout_width="match_parent"
@@ -87,5 +87,16 @@
             android:textColor="#FFFFFF"
             android:backgroundTint="#9E9E9E" />
     </LinearLayout>
+
+    <!-- 落實 API 建議的免責聲明 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本系統僅供輔助，用藥請以醫師或藥師指示為準。"
+        android:textSize="18sp"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:gravity="center" />
 
 </LinearLayout>
