@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 代表存放在 App 的內部專屬快取資料夾中，拍照完上傳後會自動刪除 -->
+    <cache-path name="camera_images" path="." />
+</paths>
